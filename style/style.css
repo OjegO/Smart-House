@@ -256,7 +256,7 @@ nav a{
     display: flex;
 }
 .diagram p{
-    margin: 0;
+    margin: 0 0 0 10px;
 }
 .out{
     border: 1px solid #000;
