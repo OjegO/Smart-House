@@ -1,0 +1,246 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    color:black;
+    background-color: #FFFFFF;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color:black;
+}
+li{
+    list-style: none;
+}
+.container {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.none{
+    display: none !important;
+}
+
+/*Header
+/////////////////////////*/
+.head{
+    background: url(../img/bg.svg) no-repeat ;
+    height: 100vh;
+}
+.active { /*Active page in menu*/
+    background-color: #FF7A00;
+    border-radius: 48px;
+    padding: 8px 20px 8px 20px;
+}
+.active a { /*Active page in menu*/
+    color:#FFFFFF;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+.logo{ /*Logo*/
+    font-family: 'Michroma';
+    font-size: 25px;
+}
+
+
+/*Navigation
+/////////////////////////*/
+nav{
+    display: flex;
+    gap: 140px;
+}
+nav li{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/*Offer
+/////////////////////////*/
+.offer{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin-top: 80px;
+}
+
+.offer h1{
+    font-size: 46px;
+    font-weight: 700;
+}
+
+.offer p{
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+
+#room-img img{
+    width: 100%;
+}
+
+/*Buttons with rooms*/
+.rooms{
+    margin-top: 50px;
+}
+.rooms div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 13px 10px 30px;
+    gap: 63px;
+    background: #ffffff;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 62px;
+    width: 50%;
+    margin-bottom: 25px; 
+    
+}
+.rooms a{
+    pointer-events: none; /*Неклікабельно*/
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+#grafic {
+    display: flex;
+    justify-content: center;
+    
+}
+
+#menu {
+    width: 50%;
+    height: 85% !important;
+    background: #ffffff;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 62px;
+    border: 0.5px #FF7A00 solid;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.list {
+    text-align: center;
+    height: 85% !important;
+}
+.list li {
+    border-bottom: 0.5px rgba(50, 50, 50, 0.326) solid;
+    padding: 10px 0 10px 0;
+}
+
+.add-card p {
+    padding: 5px 0 5px 5px;
+    font-weight: 700;
+
+}
+
+
+
+#addButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 62px;
+    padding: 5px 10px;
+    width: fit-content;
+    
+}
+#addButton a{
+    font-weight: 400;
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.done{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+input{
+    padding: 5px 5px 5px 10px;
+    border: 0.5px rgba(50, 50, 50, 0.326) solid;
+    border-radius: 40px;
+}
+
+
+
+/*Animation
+/////////////////////////*/
+.rooms div:hover{
+    background: #FF7A00;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    font-weight: 600;
+    color: #FF7A00;
+    transition: 0.2s;
+}
+
+.rooms .hide{
+    pointer-events: none; /*Неклікабельно*/
+    background: rgba(255, 255, 255, 0.34);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.rooms .hide a{
+    color:rgb(71, 71, 71)
+}
+
+.download{
+    background-color:#000 !important;
+}
+
+
+/*Selected JS*/
+
+.selected{
+    background:#FF7A00 !important;
+}
+
+/*MENU*/
+
+
+
+/*Adaptive
+/////////////////////////*/
+@media (max-width: 1600px) {
+    .container{
+        max-width: 1400px;
+    }
+    nav {
+        gap: 80px;
+    }
+    nav li{
+        font-size: 20px;
+    }
+}
