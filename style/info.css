@@ -109,17 +109,17 @@ nav a{
 .in6{
     background: linear-gradient(90deg, #FF7A00 1.38%, rgba(255, 214, 0, 0.63) 100%);
     border-radius: 48px;
-    width: 54%;
+    width: 57%;
 }
 .in3{
     background: linear-gradient(90deg, #FF7A00 1.38%, rgba(255, 214, 0, 0.63) 100%);
     border-radius: 48px;
-    width: 36%;
+    width: 29%;
 }
 .in2{
     background: linear-gradient(90deg, #FF7A00 1.38%, rgba(255, 214, 0, 0.63) 100%);
     border-radius: 48px;
-    width: 20%;
+    width: 14%;
 }
 
 /*Footer
