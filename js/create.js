@@ -195,7 +195,7 @@ function convert() {
 
 function downloadDB() {
     const btn = btns[4].firstElementChild;
-    btn.download = 'hello.txt';
+    btn.download = 'List.txt';
     
     let blob = new Blob([convert()], {type: 'octet-stream'});
     btn.href = URL.createObjectURL(blob);
