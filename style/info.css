@@ -168,3 +168,31 @@ footer{
         font-size: 20px;
     }
 }
+
+@media (max-width: 500px) {
+    .container {
+        max-width: 350px;
+        overflow: hidden;
+    }
+    .systems {
+        display: block;
+    }
+
+    .card1 {
+        margin-bottom: 40px;
+    }
+
+    #lamp{
+        display: none;
+    }
+
+    .security, .control, .light, .climat {
+        max-width: 350px;
+        display: block;
+    }
+
+    footer {
+        padding: 15px 30px;
+    }
+
+}
