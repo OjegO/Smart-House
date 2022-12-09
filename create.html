@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="style/createStyle.css">
+    <title>Smart Home</title>
+</head>
+<body>
+    <div class="head">
+        <div class="container">
+            <header>
+                <p class="logo">Smart Home</p>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Головна</a></li>
+                    </ul>
+                    <ul>
+                        <li class="active"><a href="create.html">Створити</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="source.html">Джерела</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="info.html">Інфо</a></li>
+                    </ul>
+                </nav>
+                
+            </header>
+            
+            <div class="offer">
+                <div class="content">
+                    <h1>З чого розпочнемо?</h1>
+                    <p>Виберіть кімнату, щоб встановити розумні прилади.</p>
+                    <div class="rooms">
+                        <div id="livingRoom">
+                            <a href="">Вітальня</a>
+                            <img src="img/roudStr.svg" alt="">
+                        </div>
+                        <div id="kitchen">
+                            <a href="">Кухня</a>
+                            <img src="img/roudStr.svg" alt="">
+                        </div>
+                        <div id="bathRoom">
+                            <a href="">Ванна кімната</a>
+                            <img src="img/roudStr.svg" alt="">
+                        </div>
+                        <div id="bedRoom">
+                            <a href="">Спальня</a>
+                            <img src="img/roudStr.svg" alt="">
+                        </div>
+                        <div class="none" style="pointer-events: all">
+                            <a href="">Download</a>
+                            <img src="img/roudStr.svg" alt="">
+                        </div>
+                    </div> 
+                </div>
+                <div id="grafic">
+                    <div id="menu" class="none">
+                        <div class="list">
+                            <ul class="gadgetsList">
+                                <li class="emptyList">
+                                    <img src="./img/leaf.svg" alt="Empty" width="48" class="mt-3">
+                                    <div class="empty-list__title">Список пристроїв пустий</div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+
+
+                        <div class="add-card" >
+                            <p>Додати новий пристрій</p>
+                            <div class="card-body">
+                                <form id="form">
+                                    <div class="form-group">
+                                        <div class="input">
+                                            <input type="text" class="form-control" id="taskInput" placeholder="Назва пистрою" required>
+                                            <img id="addBtn" src="img/roudStr.svg" alt="" style="width: 10%;">
+                                        </div>
+                                        <div class="done">
+                                            <!--<img id="addBtn" src="img/roudStr.svg" alt="" style="width: 50%;">-->
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div> 
+                    <div id="room-img">
+                        <img src="img/rooms/house.webp" alt=""> 
+                    </div>
+                </div>
+
+                 
+            </div>   
+        </div>
+    </div>
+<script src="js/create.js"></script>
+</body>
+</html>
