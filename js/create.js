@@ -174,19 +174,31 @@ function convert() {
     let arr = [];
     let i = 0;
     for(let e of deviceDB.livingRoom) {
-        arr[i] = e;
+        if (i == 0) {
+            arr[i] = `${i+1}) ${e}`;
+        } else {
+            arr[i] = `\n${i+1}) ${e}`;}
         i++;
     }
     for(let e of deviceDB.kitchen) {
-        arr[i] = e;
+        if (i == 0) {
+            arr[i] = `${i+1}) ${e}`;
+        } else {
+            arr[i] = `\n${i+1}) ${e}`;}
         i++;
     }
     for(let e of deviceDB.bathRoom) {
-        arr[i] = e;
+        if (i == 0) {
+            arr[i] = `${i+1}) ${e}`;
+        } else {
+            arr[i] = `\n${i+1}) ${e}`;}
         i++;
     }
     for(let e of deviceDB.bedRoom) {
-        arr[i] = e;
+        if (i == 0) {
+            arr[i] = `${i+1}) ${e}`;
+        } else {
+            arr[i] = `\n${i+1}) ${e}`;}
         i++;
     }
 
