@@ -113,6 +113,9 @@ nav li{
     text-decoration: none;
     color: #000;
 }
+.rooms img {
+    pointer-events: none;
+}
 
 #grafic {
     display: flex;
